@@ -1,6 +1,8 @@
+# cloud.google.com/go v0.26.0
+cloud.google.com/go/compute/metadata
 # github.com/beevik/etree v0.0.0-20161216042344-4cd0dd976db8
 github.com/beevik/etree
-# github.com/beorn7/perks v0.0.0-20160229213445-3ac7bf7a47d1
+# github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 github.com/beorn7/perks/quantile
 # github.com/coreos/etcd v3.2.9+incompatible
 github.com/coreos/etcd/clientv3
@@ -15,16 +17,20 @@ github.com/coreos/etcd/pkg/tlsutil
 github.com/coreos/go-oidc
 # github.com/felixge/httpsnoop v1.0.0
 github.com/felixge/httpsnoop
-# github.com/ghodss/yaml v0.0.0-20161020005002-bea76d6a4713
+# github.com/ghodss/yaml v1.0.0
 github.com/ghodss/yaml
-# github.com/golang/protobuf v0.0.0-20171113180720-1e59b77b52bf
+# github.com/golang/protobuf v1.2.0
 github.com/golang/protobuf/protoc-gen-go
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/protoc-gen-go/generator
 github.com/golang/protobuf/protoc-gen-go/grpc
 github.com/golang/protobuf/protoc-gen-go/descriptor
+github.com/golang/protobuf/protoc-gen-go/generator/internal/remap
 github.com/golang/protobuf/protoc-gen-go/plugin
+github.com/golang/protobuf/ptypes
 github.com/golang/protobuf/ptypes/any
+github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/timestamp
 # github.com/gorilla/context v0.0.0-20160525203319-aed02d124ae4
 github.com/gorilla/context
 # github.com/gorilla/handlers v0.0.0-20161206055144-3a5767ca75ec
@@ -47,7 +53,7 @@ github.com/lib/pq
 github.com/lib/pq/oid
 # github.com/mattn/go-sqlite3 v0.0.0-20160907162043-3fb7a0e792ed
 github.com/mattn/go-sqlite3
-# github.com/matttproud/golang_protobuf_extensions v0.0.0-20150406173934-fc2b8d3a73c4
+# github.com/matttproud/golang_protobuf_extensions v1.0.1
 github.com/matttproud/golang_protobuf_extensions/pbutil
 # github.com/pquerna/cachecontrol v0.0.0-20160421231612-c97913dcbd76
 github.com/pquerna/cachecontrol
@@ -55,15 +61,17 @@ github.com/pquerna/cachecontrol/cacheobject
 # github.com/prometheus/client_golang v0.9.0-pre1
 github.com/prometheus/client_golang/prometheus
 github.com/prometheus/client_golang/prometheus/promhttp
-# github.com/prometheus/client_model v0.0.0-20150212101744-fa8ad6fec335
+# github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
 github.com/prometheus/client_model/go
-# github.com/prometheus/common v0.0.0-20170220103846-49fee292b27b
+# github.com/prometheus/common v0.0.0-20180801064454-c7de2306084e
 github.com/prometheus/common/expfmt
 github.com/prometheus/common/model
 github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
-# github.com/prometheus/procfs v0.0.0-20170216223256-a1dba9ce8bae
+# github.com/prometheus/procfs v0.0.0-20180725123919-05ee40e3a273
 github.com/prometheus/procfs
+github.com/prometheus/procfs/nfs
 github.com/prometheus/procfs/xfs
+github.com/prometheus/procfs/internal/util
 # github.com/russellhaering/goxmldsig v0.0.0-20170324122954-eaac44c63fe0
 github.com/russellhaering/goxmldsig
 github.com/russellhaering/goxmldsig/etreeutils
@@ -83,54 +91,84 @@ golang.org/x/crypto/ed25519/internal/edwards25519
 # golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3
 golang.org/x/lint/golint
 golang.org/x/lint
-# golang.org/x/net v0.0.0-20170413175226-5602c733f70a
+# golang.org/x/net v0.0.0-20181106065722-10aee1819953
 golang.org/x/net/context
 golang.org/x/net/http2
 golang.org/x/net/trace
+golang.org/x/net/http/httpguts
 golang.org/x/net/http2/hpack
 golang.org/x/net/idna
-golang.org/x/net/lex/httplex
 golang.org/x/net/internal/timeseries
-# golang.org/x/oauth2 v0.0.0-20160718223228-08c8d727d239
+golang.org/x/net/context/ctxhttp
+# golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890
 golang.org/x/oauth2
 golang.org/x/oauth2/bitbucket
 golang.org/x/oauth2/github
+golang.org/x/oauth2/google
 golang.org/x/oauth2/internal
-# golang.org/x/sys v0.0.0-20151211033651-833a04a10549
+golang.org/x/oauth2/jws
+golang.org/x/oauth2/jwt
+# golang.org/x/sys v0.0.0-20180909124046-d0be0721c37e
 golang.org/x/sys/unix
-# golang.org/x/text v0.0.0-20170401064109-f4b4367115ec
+# golang.org/x/text v0.3.0
 golang.org/x/text/secure/bidirule
+golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
 golang.org/x/text/transform
-golang.org/x/text/unicode/bidi
 # golang.org/x/tools v0.0.0-20181201035826-d0ca3933b724
 golang.org/x/tools/go/ast/astutil
 golang.org/x/tools/go/gcexportdata
 golang.org/x/tools/go/internal/gcimporter
-# google.golang.org/appengine v0.0.0-20160621060416-267c27e74922
+# google.golang.org/api v0.1.0
+google.golang.org/api/admin/directory/v1
+google.golang.org/api/gensupport
+google.golang.org/api/googleapi
+google.golang.org/api/googleapi/internal/uritemplates
+# google.golang.org/appengine v1.3.0
+google.golang.org/appengine
 google.golang.org/appengine/urlfetch
 google.golang.org/appengine/internal
+google.golang.org/appengine/internal/app_identity
+google.golang.org/appengine/internal/modules
 google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/internal/base
 google.golang.org/appengine/internal/datastore
 google.golang.org/appengine/internal/log
 google.golang.org/appengine/internal/remote_api
-# google.golang.org/genproto v0.0.0-20170404132009-411e09b969b1
+# google.golang.org/genproto v0.0.0-20181202183823-bd91e49a0898
 google.golang.org/genproto/googleapis/rpc/status
-# google.golang.org/grpc v0.0.0-20170413033559-0e8b58d22f34
+# google.golang.org/grpc v1.17.0
 google.golang.org/grpc
 google.golang.org/grpc/credentials
+google.golang.org/grpc/balancer
+google.golang.org/grpc/balancer/roundrobin
 google.golang.org/grpc/codes
+google.golang.org/grpc/connectivity
+google.golang.org/grpc/encoding
+google.golang.org/grpc/encoding/proto
 google.golang.org/grpc/grpclog
 google.golang.org/grpc/internal
+google.golang.org/grpc/internal/backoff
+google.golang.org/grpc/internal/binarylog
+google.golang.org/grpc/internal/channelz
+google.golang.org/grpc/internal/envconfig
+google.golang.org/grpc/internal/grpcrand
+google.golang.org/grpc/internal/grpcsync
+google.golang.org/grpc/internal/transport
 google.golang.org/grpc/keepalive
 google.golang.org/grpc/metadata
 google.golang.org/grpc/naming
 google.golang.org/grpc/peer
+google.golang.org/grpc/resolver
+google.golang.org/grpc/resolver/dns
+google.golang.org/grpc/resolver/passthrough
 google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
-google.golang.org/grpc/transport
+google.golang.org/grpc/credentials/internal
+google.golang.org/grpc/balancer/base
+google.golang.org/grpc/binarylog/grpc_binarylog_v1
+google.golang.org/grpc/internal/syscall
 # gopkg.in/asn1-ber.v1 v1.0.0-20150924051756-4e86f4367175
 gopkg.in/asn1-ber.v1
 # gopkg.in/ldap.v2 v2.5.1
@@ -139,5 +177,5 @@ gopkg.in/ldap.v2
 gopkg.in/square/go-jose.v2
 gopkg.in/square/go-jose.v2/cipher
 gopkg.in/square/go-jose.v2/json
-# gopkg.in/yaml.v2 v2.0.0-20160301204022-a83829b6f129
+# gopkg.in/yaml.v2 v2.2.1
 gopkg.in/yaml.v2
