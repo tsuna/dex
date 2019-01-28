@@ -4,7 +4,7 @@ cloud.google.com/go/compute/metadata
 github.com/beevik/etree
 # github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 github.com/beorn7/perks/quantile
-# github.com/coreos/etcd v3.2.9+incompatible
+# github.com/coreos/etcd v3.3.11+incompatible
 github.com/coreos/etcd/clientv3
 github.com/coreos/etcd/clientv3/namespace
 github.com/coreos/etcd/pkg/transport
@@ -12,6 +12,7 @@ github.com/coreos/etcd/auth/authpb
 github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes
 github.com/coreos/etcd/etcdserver/etcdserverpb
 github.com/coreos/etcd/mvcc/mvccpb
+github.com/coreos/etcd/pkg/types
 github.com/coreos/etcd/pkg/tlsutil
 # github.com/coreos/go-oidc v0.0.0-20170307191026-be73733bb8cc
 github.com/coreos/go-oidc
@@ -19,6 +20,10 @@ github.com/coreos/go-oidc
 github.com/felixge/httpsnoop
 # github.com/ghodss/yaml v1.0.0
 github.com/ghodss/yaml
+# github.com/gogo/protobuf v1.1.1
+github.com/gogo/protobuf/gogoproto
+github.com/gogo/protobuf/proto
+github.com/gogo/protobuf/protoc-gen-gogo/descriptor
 # github.com/golang/protobuf v1.2.0
 github.com/golang/protobuf/protoc-gen-go
 github.com/golang/protobuf/proto
@@ -166,6 +171,7 @@ google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
 google.golang.org/grpc/credentials/internal
+google.golang.org/grpc/health/grpc_health_v1
 google.golang.org/grpc/balancer/base
 google.golang.org/grpc/binarylog/grpc_binarylog_v1
 google.golang.org/grpc/internal/syscall
