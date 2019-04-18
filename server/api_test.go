@@ -210,6 +210,7 @@ func TestRefreshToken(t *testing.T) {
 			EmailVerified: true,
 			Groups:        []string{"a", "b"},
 		},
+		ConnectorData: []byte(`{"some":"data"}`),
 	}
 
 	if err := s.CreateRefresh(r); err != nil {
