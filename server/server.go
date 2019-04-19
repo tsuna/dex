@@ -256,7 +256,7 @@ func newServer(ctx context.Context, c Config, rotationStrategy rotationStrategy)
 			corsOption := handlers.AllowedOrigins(c.AllowedOrigins)
 			handler = handlers.CORS(corsOption)(handler)
 		}
-		r.Handle(path.Join(issuerURL.Path, p), handler)
+		r.Handle(path.Join(issuerURL.Path, p), instrumentHandlerCounter(p, handler))
 	}
 	r.NotFoundHandler = http.HandlerFunc(http.NotFound)
 
