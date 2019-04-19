@@ -245,6 +245,12 @@ func newServer(ctx context.Context, c Config, rotationStrategy rotationStrategy)
 	handle := func(p string, h http.Handler) {
 		r.Handle(path.Join(issuerURL.Path, p), instrumentHandlerCounter(p, h))
 	}
+	r.Use(func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			s.logger.Infof("%s %s from %s (XFF: %q)", r.Method, r.RequestURI, r.RemoteAddr, r.Header.Get("X-Forwarded-For"))
+			next.ServeHTTP(w, r)
+		})
+	})
 	handleFunc := func(p string, h http.HandlerFunc) {
 		handle(p, h)
 	}
